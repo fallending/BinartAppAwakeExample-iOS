@@ -1,0 +1,71 @@
+//
+//  AppDelegate.m
+//  AppAwakeB
+//
+//  Created by Seven on 2020/7/23.
+//  Copyright © 2020 Seven. All rights reserved.
+//
+
+#import "AppDelegate.h"
+
+@interface AppDelegate ()
+
+@end
+
+@implementation AppDelegate
+
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    return YES;
+}
+
+
+#pragma mark - UISceneSession lifecycle
+
+
+//- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
+//    // Called when a new scene session is being created.
+//    // Use this method to select a configuration to create the new scene with.
+//    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+//}
+
+
+//- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
+//    // Called when the user discards a scene session.
+//    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+//    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+//}
+
+// MARK: -
+
+// p2
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    NSLog(@"app = %@", application);
+    NSLog(@"url = %@", url); // weixin://com.weixin.app/hgame/apiname?a=1&b=2
+    return YES;
+}
+
+// p0
+//- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+//    NSLog(@"app = %@", app);
+//    NSLog(@"url = %@", url);
+//    // weixin://com.weixin.app/hgame/apiname?a=1&b=
+//    NSLog(@"options = %@", options);
+////    {
+////        UIApplicationOpenURLOptionsOpenInPlaceKey = 0;
+////        UIApplicationOpenURLOptionsSourceApplicationKey = "com.binart.AppAwakeA";
+////    }
+//    return YES;
+//}
+
+// p1
+//- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+//    NSLog(@"app = %@", application);
+//    NSLog(@"url = %@", url); // weixin://com.weixin.app/hgame/apiname?a=1&b=2
+//    NSLog(@"src = %@", sourceApplication); // com.binart.AppAwakeA
+//    NSLog(@"ano = %@", annotation);
+//    return YES;
+//}
+
+@end
