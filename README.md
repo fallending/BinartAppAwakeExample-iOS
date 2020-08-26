@@ -21,3 +21,19 @@ Application Scene Manifest
 
         并不是唯一的，也就是说，多个应用之间设置的URL Schemes是可以相同的。那么问题来了，假如两个应用的URL Schemes相同的话，使用openURL:方法会打开哪个应用呢？
         结论：如果两个应用有URL Schemes是相同的，后安装的应用的URL Schemes会把早安装的应用的URL Schems覆盖掉
+
+#### 有关 Scheme/Identifier
+
+```
+https://stackoverflow.com/questions/16597631/url-identifier-and-url-scheme
+
+According to Apple documentation they don't give much info about the identifier and why it is needed or where it is used. They only say that it should be unique:
+
+A string containing the abstract name of the URL scheme. To ensure uniqueness, it is recommended that you specify a reverse-DNS style of identifier, for example, com.acme.myscheme. The string you specify is also used as a key in your app’s InfoPlist.strings file. The value of the key is the human-readable scheme name.
+
+Also if more than one app specify the same url scheme, then the outcome is unpredictable:
+
+Note: If more than one third-party app registers to handle the same URL scheme, there is currently no process for determining which app will be given that scheme.
+
+The experience taught me that the app who first registered that scheme will be opened, but this may be wrong.
+```

@@ -22,10 +22,17 @@
     // Do any additional setup after loading the view.
 }
 
-- (IBAction)onStartAppB:(id)sender {// com.binart.AppAwakeA/AppAwakeB?a=1&b=1&c=2
-    NSURL *url = [NSURL URLWithString:@"weixin://com.weixin.app/hgame/apiname?a=1&b=2"];
+- (IBAction)onStartAppB:(id)sender {
+    NSURL *url = [NSURL URLWithString:@"weixin://com.binart.AppAwakeA/AppAwakeB?a=1&b=1&c=2"];
     if ([[UIApplication sharedApplication] canOpenURL:url])
         [[UIApplication sharedApplication] openURL:url options:@{@"c":@"3"} completionHandler:nil];
 }
+
+- (IBAction)onStartAppC:(id)sender {
+    NSURL *url = [NSURL URLWithString:@"qq://com.binart.AppAwakeA/AppAwakeC?a=1&b=1&c=2"];
+    if ([[UIApplication sharedApplication] canOpenURL:url])
+        [[UIApplication sharedApplication] openURL:url options:@{@"c":@"3"} completionHandler:nil];
+}
+
 
 @end
