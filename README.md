@@ -8,6 +8,8 @@ Application Scene Manifest
 
 ## Scheme
 
+也可以参考：https://www.jianshu.com/p/f16d87d2b581 , [Why do we need “URL Identifier” (CFBundleURLName) plist field to use custom URL scheme on iOS?](https://stackoverflow.com/questions/31932923/why-do-we-need-url-identifier-cfbundleurlname-plist-field-to-use-custom-url)
+
 #### url scheme到底是什么？
 
         url scheme是APP可以自己注册的，即在项目中的info.plist里添加URL types，点击展开，右键选择Add Row，添加URL Schemes

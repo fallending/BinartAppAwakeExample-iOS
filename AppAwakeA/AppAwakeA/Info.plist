@@ -22,7 +22,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string></string>
+			<string>app.weixin1.com</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>weixin</string>
