@@ -6,7 +6,9 @@ App 唤起
 
 Application Scene Manifest
 
-## Scheme
+## iOS 9.0 之前
+
+### Scheme
 
 也可以参考：https://www.jianshu.com/p/f16d87d2b581 , [Why do we need “URL Identifier” (CFBundleURLName) plist field to use custom URL scheme on iOS?](https://stackoverflow.com/questions/31932923/why-do-we-need-url-identifier-cfbundleurlname-plist-field-to-use-custom-url)
 
@@ -39,3 +41,11 @@ Note: If more than one third-party app registers to handle the same URL scheme, 
 
 The experience taught me that the app who first registered that scheme will be opened, but this may be wrong.
 ```
+
+## iOS 9.0 及之后
+
+### Universal Links
+
+https://www.jianshu.com/p/f1a1e1833eec
+
+待添加例子！！！！
